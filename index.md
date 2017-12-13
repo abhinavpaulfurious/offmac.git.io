@@ -1,37 +1,215 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+  <style>
+    body {margin:0;}
 
-You can use the [editor on GitHub](https://github.com/abhinavpaulfurious/offmac.git.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
 
-### Markdown
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-```markdown
-Syntax highlighted code block
+.topnav .icon {
+  display: none;
+}
 
-# Header 1
-## Header 2
-### Header 3
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
 
-- Bulleted
-- List
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 
-1. Numbered
-2. List
+}
+h1 , p ,h2, h3 {
+color:white;
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+text-align:right;
+font-family:segoe script;
+padding-right: 30px;
+}
+/* Half-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 2px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/abhinavpaulfurious/offmac.git.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+.signupbtn {
+    float: left;
+    width: 50%;
+    text-align:center;
 
-### Support or Contact
+}
+ 
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  , .signupbtn {
+       width: 100%;
+    }
+}
+form{
+width:500px;
+display-inline-block;
+float:right;
+padding-left:10px;
+padding-right:10px;
+font-family:segoe-script;
+color:white;
+padding:20px;
+}
+html , body {
+background-color:black;
+}
+footer {
+margin-top: 50px;
+}
+
+footer ul li {
+display: inline-block;
+padding-right: 15px;
+}
+    </style>
+  <body>
+<a class="icon-twitter" href="https://twitter.com/abhinavsonone"  title="Follow me on Twitter"">
+              <i class="fa fa-twitter"></i>
+            </a>
+            &nbsp;&nbsp;�&nbsp;&nbsp;
+        
+      
+        
+            <a class="icon-facebook" href="https://facebook.com/lifisticprasen"  title="Connect with me on Facebook"">
+              <i class="fa fa-facebook"></i>
+            </a>
+            &nbsp;&nbsp;�&nbsp;&nbsp;
+        
+      
+        
+            <a class="icon-instagram" href="https://www.instagram.com/gggggg"  title="Follow me on Instagram"">
+              <i class="fa fa-instagram"></i>
+            </a>
+<div class="topnav" id="myTopnav">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+ <a class="w3-bar-item w3-button" href='contact.html' "#contact">Contact</a>
+ 
+  <a class="w3-bar-item w3-button" href='contact.html'"#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div style="padding-left:16px">
+
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<h1>MAC 7</h1>
+<p>"WE ARE THE OPEN SOURCE FOR HUMLAITY"</p>
+<h2>SIGN UP MAC </h2>
+<aside>
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+   
+
+
+    <div class="clearfix">
+      
+      <a class="w3-bar-item w3-button" href='signin.html'><center><button type="submit" class="signupbtn">Sign Up</button></center></a>
+    </div>
+  </div>
+<h3>Yet not signed ?   <a class="w3-bar-item w3-button" href='create1.html'>Create an account</a></h3>  
+ <p>By creating an account you agree to our <a href="#">Terms & Privacy.</a></p> 
+</form>
+</aside>
+<div class='w3-col m4'>
+
+<img src="mac7.gif">
+
+<footer>
+<ul>
+<li><a href="#"><img src="fb.png" style="width:32px"></a></li>
+<li><a href="#"><img src="tw.png" style="width:32px"></a></li>
+<li><a href="#"><img src="in.png" style="width:32px"></a></li>
+<li><a href="#"><img src="" style="width:"></a></li>
+</ul>
+</footer>
+
+</body>
+</html>
+
+
